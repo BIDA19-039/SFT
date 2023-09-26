@@ -1,0 +1,47 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+
+
+
+
+ <!-- Main Section -->
+ <main class="singleProject my-md">
+    <div class="container">
+      <div class="layout">
+           
+        
+        <div class="column column--2of3">
+          <img class="singleProject__preview" src="{{dataprocessing.featured_image.url}}" alt="portfolio thumbnail" />
+          <a href="profile.html" class="singleProject__developer">{{dataprocessing.account}}</a>
+          <h2 class="singleProject__title">{{dataprocessing.customer_name}}</h2>
+          <h3 class="singleProject__subtitle"></h3>
+          <div class="singleProject__info">
+            {{dataprocessing.customer_surname}}
+
+            <br />
+      
+            {{dataprocessing.customer_email}}
+          </div>
+
+
+                           
+            
+          
+          
+        
+          
+          
+        </div>
+      </div>
+    </div>
+    <div class="auth__alternative">
+      <a href="{% url 'homepage' %}">Back to homepage</a>
+    </div>
+  
+    </div>
+  </main>
+
+{% endblock content %}

@@ -1,0 +1,6 @@
+Read me
+
+current users
+
+username:bontle440
+password:djangoframework

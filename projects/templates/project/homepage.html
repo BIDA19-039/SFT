@@ -1,0 +1,17 @@
+{% extends 'main.html'%}
+
+{% block content %}
+
+<h1>Homepage template</h1>
+
+<ul>
+    {% for homepage in projects views.py %}
+
+    <li>Customer_name: <a href="{% url 'homepage' Customer.Customer_id %}">{{Customer.Customer_name}}</a></li>
+    {% endfor %}
+    {% endblock content %}
+    
+   
+
+</ul>
+
